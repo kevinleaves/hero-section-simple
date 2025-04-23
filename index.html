@@ -13,7 +13,7 @@
     />
     <link rel="stylesheet" href="css/style.css" />
 
-    <!-- Tailwind CDN allows you to use Tailwind classes immediately in your HTML without any installation steps. 
+    <!-- Tailwind CDN allows you to use Tailwind classes immediately in your HTML without any installation steps.
       If you're not using Tailwind, you may delete the <script> -->
     <!-- Get started on Tailwind: https://tailwindcss.com/docs/installation/play-cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -25,16 +25,37 @@
   </head>
   <body>
     <!-- Add your site or application content here -->
-    <h1 class="text-5xl text-center font-semibold pt-20">
-      Hello world! Write your content here.
-    </h1>
+    <main class="min-h-screen md:container max-w-[375px] mx-auto bg-[#F9FAFB]">
+      <section
+        class="flex flex-col lg:flex-row shadow-2xl bg-white py-[104px] px-4 gap-12 lg:gap-16 h-full lg:p-24"
+      >
+        <div class="">
+          <div class="mb-8 md:mb-16">
+            <h1 class="text-4xl lg:text-6xl md:text-5xl font-semibold mb-4">
+              Well crafted abstract images
+            </h1>
+            <p class="text-neutral-600 text-lg md:text-xl">
+              High quality abstract images for your projects, wallpaper and
+              presentations.
+            </p>
+          </div>
+          <div class="flex gap-4 justify-between md:justify-start">
+            <button
+              class="bg-white text-neutral-900 shadow-lg px-5 py-3 rounded text-base w-full md:w-auto border-neutral-200"
+            >
+              <span>Learn More</span>
+            </button>
+            <button
+              class="bg-indigo-700 text-white shadow-2xl px-5 py-3 rounded text-base w-full md:w-auto"
+            >
+              <span>See Pricing</span>
+            </button>
+          </div>
+        </div>
+        <img src="img/prism.png" class="w-full object-cover" />
+      </section>
+    </main>
 
-    <!-- Well crafted abstract images
-      High quality abstract images for your projects, wallpaper and presentations.
-      Learn more
-      See pricing -->
-
-    <!-- Attribute this challenge to yourself! -->
     <div class="credits">
       A challenge by
       <a
@@ -42,8 +63,8 @@
         target="_blank"
         >GreatFrontEnd Projects</a
       >. Built by
-      <a href="https://www.greatfrontend.com/u/your_username" target="_blank"
-        >Your Name</a
+      <a href="https://www.greatfrontend.com/u/Kevin Le" target="_blank"
+        >Kevin Le</a
       >.
     </div>
     <script src="js/index.js"></script>

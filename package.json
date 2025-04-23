@@ -4,7 +4,10 @@
   "description": "<!-- Use Ctrl/Cmd + Shift + V in VS Code to preview this Markdown file. -->",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx vite",
+    "build": "npx vite build",
+    "preview": "npx vite preview"
   },
   "repository": {
     "type": "git",
@@ -15,5 +18,10 @@
   "bugs": {
     "url": "https://github.com/kevinleaves/hero-section-simple/issues"
   },
-  "homepage": "https://github.com/kevinleaves/hero-section-simple#readme"
+  "type": "module",
+  "homepage": "https://github.com/kevinleaves/hero-section-simple#readme",
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.4",
+    "tailwindcss": "^4.1.4"
+  }
 }
